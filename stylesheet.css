@@ -1,5 +1,80 @@
-/* Changes color to blue */
+/* Changes color to blue*/
 .myclass { 
-    color: blue; 
+    color: blue; /*color name*/
 }
+
+/*changes everything to be black*/
+* {
+    color: hsl(0,0,0) /*color using hsl*/
+}
+
+/*Use flex layout for main content*/
+main { 
+    display: flex; /*flex layout*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+}
+
+/*Use media query to change display mode of in page links to none when screen width is less than 9 inches*/
+@media (min-width: 9in) { /*absolute units*/
+    a[href^="#"] { 
+        display: none; 
+    }
+}
+
+/*Changes nav element position to relative*/
+nav { 
+    position: relative; 
+    top: 1cm; /*absolute units*/
+}
+
+/*Psuedo-class makes buttons blue when you hover over them*/
+button:hover {
+    background-color: blue;
+}
+
+/*changes heading id and active button background to red using a selector list*/
+#heading,
+button:active { 
+    background-color: #ff0000; /* change color using hex*/
+}
+
+/*Defines box layout of section elements that are direct children of main using three relative units*/
+main > section { 
+    position: static;
+    height: 10vh; width: 5vw; min-width: 650px; min-height: 550px;
+    margin-top: 2em; margin-bottom: 2em; margin-left: 2em; margin-right: 2em;
+    padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;
+    border-style: double;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 30px;
+}
+
+/*Changes form elements that are descendants of sections to grid layout*/
+section form { 
+    display: grid;
+    margin: 20px 40px 20px 40px;
+    padding: 20px 40px 20px 40px;
+}
+
+/*Changes p elements directly adjacent to a elements to use auto spaced margins, change display mode to inline-block, and center align text.*/
+a + p { 
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+/*Changes h2 elements generally adjacents to h1 elements to the color yellow*/
+h1 ~ h2 { 
+    color: yellow;
+}
+
+/*Changes p elements of class important to have underlines*/
+p.important { 
+    text-decoration: underline;
+}
+
+
 
