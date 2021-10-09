@@ -4,7 +4,8 @@
 }
 
 /*changes heading id background to red*/
-#heading { 
+#heading,
+button:active { 
     background-color: #ff0000;
 }
 
@@ -26,10 +27,6 @@ a[href^="#"] {
 
 button:hover {
     background-color: blue;
-}
-
-button:active { 
-    background-color: red;
 }
 
 
