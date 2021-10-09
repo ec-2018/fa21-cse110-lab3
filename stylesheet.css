@@ -13,5 +13,10 @@
     color: hsl(0,0,0)
 }
 
-
+main { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+}
 
