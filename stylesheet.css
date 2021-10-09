@@ -3,8 +3,15 @@
     color: blue; 
 }
 
-
+/*changes heading id background to red*/
 #heading { 
     background-color: #ff0000;
 }
+
+/*changes everything to be black*/
+* {
+    color: hsl(0,0,0)
+}
+
+
 
