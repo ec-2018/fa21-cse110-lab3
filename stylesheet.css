@@ -24,3 +24,13 @@ a[href^="#"] {
     display: none;
 }
 
+button:hover {
+    background-color: blue;
+}
+
+button:active { 
+    background-color: red;
+}
+
+
+
